@@ -2,12 +2,56 @@
 <html>
     <head><meta charset="utf-8">
         <style>
-            table, th, tr, td {
+                        table, th, tr, td {
                 border: solid 1px black;
                 border-collapse: collapse;
                 padding: 8px;
             }
-            tr, td {width: 80px; height: 60px;}
+            *{background-color: gray;}
+            .clear {
+                clear: both;
+            }
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            header{width: 800px; height: 50px;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-bottom: 5px;
+                border-bottom: solid 1px ;
+                border: solid 1px black;
+                text-align: center;
+                font-weight: bold;
+                background-color: black;
+            color:white}
+            nav {width: 800px; height: 30px;
+                margin-top: 60px;
+                margin-left: 20px;
+                text-align: center;
+                border: solid 1px black;}
+            section {width: 800px;
+                height: 680px;
+                float: left;
+                margin-top: 70px;
+                border: solid 1px black;}
+            aside {width: 640px; height: 380px;
+                float: left;
+                margin-top: 70px;
+                margin-left: 29px;
+                border: solid 1px black;
+                text-align: center;}
+    
+            
+            footer {
+                width: 995px;
+                height: 220px;
+                margin-top: 70px;
+                border: solid 1px black;
+                font-weight: bold;
+                float: right;
+            }
+            tr, td {width: 80px; height: 30px;}
             .rudxhd {background-color: plum;}
             .rudwjdtl {background-color: yellow;}
             .duddj {background-color: greenyellow;}
@@ -15,8 +59,8 @@
             .dnpqvmfh{background-color: crimson;}
             .dprtpf {background-color: dodgerblue;}
             .covmf {background-color: antiquewhite;}
-            .dydlf {background-color:gold;}
-            .tlrks {background-color:darkkhaki}
+            .dydlf {background-color:white;}
+            .tlrks {background-color:white}
             </style>
              <script>
                 function func () {
@@ -27,10 +71,22 @@
                 }
             </script>
           <body>
-        <h3>환영합니다! 20220330 김민서의 시간표입니다.</h3>
-            
-            <table>
-                <img onmouseout="this.style.width='50px'" onmouseover="this.style.width='80px'"src="img/시간표.png" width="50px">
+        <h3><header>환영합니다! 20220330 김민서의 시간표입니다.</header></h3>
+       
+                <nav>
+                    <a href="form_test.html">[회원가입]
+                
+                    </a> <A href="루파토펜션.html">[루파토 펜션 안내]</A>
+                    <a href="페스티벌사이츠.html">[축제 문의]</a>
+                    <a href="주말야간개장안내.html">[야간 개장 안내]</a>
+                    <a href="세일안내.html">[세일 안내]</a>
+                    <a href="5월일정표.html">[일정표]</a>
+                    <a href="쇼핑몰 판매.html">[쇼핑몰]</a>
+                </nav>
+        
+                <section><table>
+                    <img onmouseout="this.style.width='50px'" onmouseover="this.style.width='80px'"src="img/시간표.png" width="50px">
+                
                 <button onclick="document.getElementById('rhdrkd').innerHTML='공강'">1번</button>
                 <button onclick="document.getElementById('rhdrkd').innerHTML='월'">되돌리기</button>
                 <tr><td></td><td class="dydlf" id="rhdrkd">월</td><td class="dydlf" id="red" onmouseover="func();" onmouseout="fun();">화</td><td class="dydlf">수</td><td class="dydlf">목</td><td class="dydlf">금</td></tr>
@@ -45,18 +101,42 @@
                 <tr><td class="tlrks">17:30~18:20</td><td></td><td></td><td></td><td></td><td></td></tr>
                 <tr><td class="tlrks">18:30~19:20</td><td></td><td></td><td></td><td></td><td></td></tr>
                 <tr><td class="tlrks">19:30~20:20</td><td></td><td></td><td></td><td></td><td class="dnpqvmfh">웹프로그래밍</td></tr>
+</table></section>
+<aside>
+    오늘의 노래 추천
+    <div id="player"></div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'sAORllP6mLU',
+                playerVars: {
+                    autoplay: 1,
+                    controls: 1,
+                    rel: 0,
+                    showinfo: 0
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+    </script>
+</aside>
+<div class="class"></div>
+<footer>
+ <img src="img/호서대전화.png" width="995px" height="220px">
+</footer>
 
 
-
-
-            </table><a href="form_test.html">[회원가입]
-                
-            </a> <A href="루파토펜션.html">[루파토 펜션 안내]</A>
-            <a href="페스티벌사이츠.html">[축제 문의]</a>
-            <a href="주말야간개장안내.html">[야간 개장 안내]</a>
-            <a href="세일안내.html">[세일 안내]</a>
-            <a href="5월일정표.html">[일정표]</a>
-            <a href="쇼핑몰 판매.html">[쇼핑몰]</a>
+           
           
             </form> 
 
