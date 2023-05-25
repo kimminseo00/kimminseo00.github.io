@@ -11,10 +11,8 @@
             .clear {
                 clear: both;
             }
-            * {
-                padding: 0;
-                margin: 0;
-            }
+            * {padding: 0;
+                margin: 0;}
             header{width: 800px; height: 50px;
                 margin-top: 20px;
                 margin-left: 20px;
@@ -31,11 +29,11 @@
                 text-align: center;
                 border: solid 1px black;}
             section {width: 800px;
-                height: 680px;
+                height: 745px;
                 float: left;
                 margin-top: 70px;
                 border: solid 1px black;}
-            aside {width: 640px; height: 380px;
+            aside {width: 640px; height: 745px;
                 float: left;
                 margin-top: 70px;
                 margin-left: 29px;
@@ -43,14 +41,12 @@
                 text-align: center;}
     
             
-            footer {
-                width: 995px;
+            footer {width: 995px;
                 height: 220px;
                 margin-top: 70px;
                 border: solid 1px black;
                 font-weight: bold;
-                float: right;
-            }
+                float: right;}
             tr, td {width: 80px; height: 30px;}
             .rudxhd {background-color: plum;}
             .rudwjdtl {background-color: yellow;}
@@ -74,9 +70,8 @@
         <h3><header>환영합니다! 20220330 김민서의 시간표입니다.</header></h3>
        
                 <nav>
-                    <a href="form_test.html">[회원가입]
-                
-                    </a> <A href="루파토펜션.html">[루파토 펜션 안내]</A>
+                    <a href="form_test.html">[회원가입]</a> 
+                 <A href="루파토펜션.html">[루파토 펜션 안내]</A>
                     <a href="페스티벌사이츠.html">[축제 문의]</a>
                     <a href="주말야간개장안내.html">[야간 개장 안내]</a>
                     <a href="세일안내.html">[세일 안내]</a>
@@ -104,15 +99,33 @@
 </table></section>
 <aside>
     오늘의 노래 추천
-    <div id="player"></div>
+    <div id="player1"></div>
+    <div id="player2"></div>
+
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
-        var player;
+        var player1, player2;
+
         function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
+            player1 = new YT.Player('player1', {
                 height: '360',
                 width: '640',
                 videoId: 'sAORllP6mLU',
+                playerVars: {
+                    autoplay: 1,
+                    controls: 1,
+                    rel: 0,
+                    showinfo: 0
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+
+            player2 = new YT.Player('player2', {
+                height: '360',
+                width: '640',
+                videoId: 'WQdFA55hT80',
                 playerVars: {
                     autoplay: 1,
                     controls: 1,
@@ -134,6 +147,17 @@
 <footer>
  <img src="img/호서대전화.png" width="995px" height="220px">
 </footer>
+
+
+           
+          
+            </form> 
+
+
+
+
+
+        </body></head></html>
 
 
            
