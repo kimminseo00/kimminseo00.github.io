@@ -133,12 +133,13 @@
                 </div>
                 <ul id="main_menu">
                     <li></li>
-                <li>고3/N수생</li>
-                <li>공시생</li>
-                <li>자기개발/원데이클래스</li>
-                <li>씨드머니</li>
-                <li>이벤트</li>
-                <li>교재쇼핑</li>
+                    <li class="목록"><a href=고3N수생.html>고3/N수생</a></li>
+                    <li class="목록"><a href=공시생.html>공시생</a></li>
+                    <li class="목록"><a href=자기개발.html>자기개발/원데이클래스</a></li>
+                    <li class="목록"><a href=씨드머니.html>씨드머니</a></li>
+                    <li class="목록"><a href=고객센터.html>고객센터</a></li>
+                    <li class="목록"><a href=seedreview.html>리뷰</a></li>
+                    
                 </ul>
             </nav>
         </header>
@@ -157,13 +158,14 @@
             <h1>유료회원가입</h1>
             <form>
                 성함:<input type="text"><br><br>
-                성별:<input type="checkbox">남성<input type="radio">여성<br><br>
-                직업:<input type="checkbox">학생<input type="radio">취준생<input type="radio">취미<br><br>
+                성별:<input type="radio" name="info">남성<input type="radio" name="info">여성<br><br>
+                직업:<input type="checkbox">학생<input type="checkbox">취준생<input type="checkbox">취미<br><br>
                 아이디:<input type="text"><br><br>
-                비밀번호:<input type="password">
+                비밀번호:<input type="password"><br><br>
+                기간:<input type="radio" name="in">3개월<input type="radio" name="in">6개월
             </form>
             <form>
-                <button type="button">가입하기</button> 
+                <button onclick="alert('결제가 완료되었습니다.')" type="button">가입하기</button>
             </form>
       <div class="clear"></div> <!--foat 속성 해제-->
        
