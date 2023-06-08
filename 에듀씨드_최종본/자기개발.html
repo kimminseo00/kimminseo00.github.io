@@ -1,0 +1,570 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+	* {
+            padding: 0;
+            margin: 0;
+        }
+
+section {width: 60%; height: 240px; margin-top: 100px; float: right; margin-right: 20%;}
+
+  #logo {
+            float: left;
+            margin: 20px 0 0 20px;
+            /* border:solid 1px red; */
+        }
+		#menus {
+           float: right
+           /* border:solid 1px red; */;
+        }
+        #top_menu {
+            text-align: right;
+            margin-top: 20px;
+            /* border:solid 1px red; */
+        }
+        #main_menu {
+            margin-top: 20px;
+            font-family: '맑은고딕';
+            font-size: 20px;
+        }
+		#main_menu li {
+            display: inline;
+            margin-left: 100px;
+            color: white;
+        }
+		li {
+            list-style-type: none;
+           }
+
+        .clear {
+            clear: both;
+        }
+        header {
+          
+            height: 100px;
+           
+            background-color:mediumaquamarine;
+                padding: 30px;
+                color: white;
+            /* border:solid 1px red; */
+        }
+		h1 {
+            color: white;
+            text-align: center;
+            text-decoration: dashed;
+        }
+		#목록 {
+    
+    width: 20%; 
+    margin-right: 20px; 
+  }
+  #강사 {  
+	float: right;
+  /* 원하는 너비로 조정하세요 */
+    margin-left: 20px; /* 원하는 간격으로 조정하세요 */
+	
+  }
+ 
+</style>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<title>에듀씨드</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="에듀씨드.html"><img src="에듀씨드 로고.jpg"></a>
+		</div>
+		<h1>에듀씨드</h1>
+		
+		<nav id="menus">
+			<div id="top_menu">                                 
+				로그인 ㅣ 회원가입 ㅣ ID/패스워드 찾기
+			</div>
+			<ul id="main_menu">
+				<li></li>
+				<li class="목록"><a href=고3n수생.html>고3/N수생</a></li>
+                <li class="목록"><a href=공시생.html>공시생</a></li>
+                <li class="목록"><a href=자기개발.html>자기개발/원데이클래스</a></li>
+                <li class="목록"><a href=씨드머니.html>씨드머니</a></li>
+                <li class="목록"><a href=고객센터.html>고객센터</a></li>
+                <li class="목록"><a href=seedreview.html>리뷰</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">					
+<section>
+	<h3>자기개발/원데이클래스</h3>
+					<form name="frm" id="frm" method="get" >
+						<input type="hidden" name="menuId" value="100000000000068">
+						<input type="hidden" name="menuInit" value="3,1,1,0,0">
+						<input type="hidden" name="searchTab" value="">
+						<input type="hidden" name="searchCategory" value="">
+						<input type="hidden" name="reservYn" />
+						<input type="hidden" name="bbsId" />
+						<input type="hidden" name="bbsMasterId" value="BBSMSTR_000000000001">
+						<input type="hidden" name="pageIndex" value="1">
+
+						<div class="sec_tb_cont">
+							<fieldset class="tb_search">
+								<legend>게시물 검색</legend>
+								
+								<label for="schKey" class="hide" >검색유형</label>
+								<select name="schKey" id="schKey" title="검색 유형 선택">
+									<option value="TITLE" >강의명</option>
+									<option value="NAME" >강사</option>
+									<option value="CONTENT" >과목</option>
+									
+								</select>
+								<label for="schVal" class="hide">검색</label>
+								<input type="text" name="schVal" id="schVal" title="검색어 입력" class="keyword" value="" placeholder="검색어 입력"/>
+								<a href="#search" onclick="javascript:fnSearch();" class="btn">검색</a>
+							</fieldset>
+
+							<div class="tb_blk">
+								<table class="" summary="번호, 제목, 파일, 작성자, 작성일, 조회수 구성되어 있습니다.">
+									<caption>강의 목록</caption>
+									<colgroup>
+										<col width="80px" class="mobileHide"><col/>
+										
+										
+										
+										<col width="90px" class="mobileHide"/>
+										
+										<col width="115px" />
+										
+										
+										<col width="80px" class="mobileHide"/>
+										
+									</colgroup>
+									<thead>
+									<tr>
+										<th class="mobileHide">과목</th>
+										
+										
+										
+										<th>강의명</th>
+										
+										
+										
+										<th class="mobileHide">강사</th>
+										
+										<th>가격</th>
+										
+										
+										<th class="mobileHide">평점(평수)</th>
+										
+									</tr>
+									</thead>
+									<tbody>
+										
+										
+											
+												<tr>
+													<td class="mobileHide">컨셉아트</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://class101.net/ko/products/60fe3b45cd56a4000da7172d" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1004753'); return false;">초보 그림러가 인기 작가가 되는 법, 콕스의 독학비법서</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+														
+																콕스	
+																
+															
+														
+													</td>
+													
+													<td>월 16,583원</td>
+													
+													
+													<td class="mobileHide">4.6점 (13)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">요리</td>
+													
+													
+													
+													<td class="subj">
+														
+														<a href="https://class101.net/ko/products/5ec0d03c31a0232781e26855" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1003949'); return false;">샐러드만으로 맛과 양 모두 즐기는 샐러드 레시피 & 드레싱 클래스</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+														 서현
+																
+															
+														
+													</td>
+													
+													<td>월 16,583원</td>
+													
+													
+													<td class="mobileHide">4.7점 (23)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">프로그래밍</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://class101.net/ko/products/5fb5d4c6c64f67000daa59e0" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033556'); return false;">15년 차 웹 개발자가 제대로 알려주는 웹 개발 입문!</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															몰입코딩
+																
+
+													</td>
+													
+													<td>연 199,000원</td>
+													
+													
+													<td class="mobileHide">4.7점 (14)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">취미</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://class101.net/ko/products/5d3e81cd1ccbe2de164a89e3" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033528'); return false;">최현우에게 배우는 마술의 비밀
+														</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">				최현우
+																
+															
+														
+													</td>
+													
+													<td>연 199,000원</td>
+													
+													
+													<td class="mobileHide">4.8점 (52)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">일상</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://class101.net/ko/products/5db05d7f9012170d987c1ab0" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033525'); return false;">비주얼 씽킹! 생각을 정리하는 탁월한 기술</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															정진호
+																
+															
+														
+													</td>
+													
+													<td>연 199,000원</td>
+													
+													
+													<td class="mobileHide">5.0점 (9)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">마케팅</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=11170" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033427'); return false;">자영업자를 위한 매출로 이어지는 인스타그램 마케팅</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+														김종영	
+																
+															
+														
+													</td>
+													
+													<td>연 199,000원</td>
+													
+													
+													<td class="mobileHide">4.4점 (65)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">비즈니스</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://class101.net/ko/products/5f17a6cbece01311ceb1152d" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033364'); return false;">표창원 프로파일링 클래스
+														</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															표창원
+																
+															
+														
+													</td>
+													
+													<td>월 16,583원</td>
+													
+													
+													<td class="mobileHide">4.7점 (23)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">영상</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://class101.net/ko/products/5c8f4c52edb2d5b5af623a00" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033348'); return false;">휘핑의 모션그래픽 꿈나무를 위한 애프터이펙트의 기초</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															휘핑
+																
+															
+														
+													</td>
+													
+													<td>월 16,583원</td>
+													
+													
+													<td class="mobileHide">4.9점(13)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">유튜브</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://class101.net/ko/products/5c5d780774eabcfdafd390d3" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033337'); return false;">60만 유튜버가 알려주는 가장 쉬운 유튜브 입문기!</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															빨간토마토
+																
+															
+														
+													</td>
+													
+													<td>월 16,583원</td>
+													
+													
+													<td class="mobileHide">4.2점(12)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">한문</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://class101.net/ko/products/5cdc225580f6734acedb691c" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033267'); return false;">그루비룸의 새로운 음악 만드는 법</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															그루비룸
+																
+															
+														
+													</td>
+													
+													<td>연 199,000원</td>
+													
+													
+													<td class="mobileHide">4.8점(83)</td>
+													
+												</tr>
+											
+										
+									</tbody>
+								</table>
+							</div>
+							
+
+							<div class="sec_paging">
+								
+
+
+
+
+	
+	<button type="button" class="img" title="이전 페이지로 이동">이전 페이지로</button>
+
+
+
+   		<button type="button" class="on">1</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('2');">2</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('3');">3</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('4');">4</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('5');">5</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('6');">6</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('7');">7</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('8');">8</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('9');">9</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('10');">10</button>
+
+   
+
+
+	<button type="button" class="img" title="다음 페이지로 이동" onclick="goPage('11');">다음 페이지로 이동</button>
+	
+
+<script>
+function goPage(page){
+	var formName = "frm";
+	var formAction = window.location.pathname;
+	document.getElementById(formName).pageIndex.value = page;
+	document.getElementById(formName).action = formAction;
+	document.getElementById(formName).submit();
+}
+</script>
+							</div>
+
+							
+
+							
+
+						
+					</form>
+
+
+					<!-- //Real Contents End-->
+				
+				<!-- 평가-담당자  area -->
+				<div class="sec_evaluation">
+					
+					
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145133324-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145133324-1');
+</script>
+
+<!-- //wrap footer area -->
+</div></section>
+<aside id="목록">
+	<ul><li>
+  <img src="원데이1.png" width="200px" >
+	</li>
+	<li>
+		<img src="원데이2.png" width="200px" >
+	</li>
+	</ul>
+	</aside>
+
+</div>
+
+</body>
+</html>
+
+
+

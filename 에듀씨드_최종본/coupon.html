@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function changeText() {
+                var text = document.getElementById("myText");
+                if (text.innerHTML === "♡배송비 무료 쿠폰♡") {
+                    text.innerHTML = "C13DFG73839SE";
+                } else {
+                    text.innerHTML = "♡배송비 무료 쿠폰♡";
+                }
+            }
+        </script>
+        <meta charset="utf-8">
+        <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style-type: none;
+           
+        }
+        .clear {
+            clear: both;
+        }
+        header {
+            height: 100px;
+            background-color:mediumaquamarine;
+            padding: 30px;
+            margin: 0%;
+            color: white;
+        }
+        
+        #top_menu {
+            text-align: right;
+            margin-top: 20px;
+        }
+        #main_menu {
+            margin-top: 20px;
+            font-family: '맑은고딕';
+            font-size: 20px;
+        }
+        #main_menu li {
+            display: inline;
+            margin-left: 100px;
+            color: white;
+        }
+        #contents {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #sub_menu {
+            width: 800px;
+            float: left;
+            margin-top: 25px;
+        }
+        #sub_menu li {
+            padding: 10px;
+            border-bottom: dotted 1px #ccccccc;
+            border: solid 1px gray;
+        }
+        #main_contents {
+            width: 970px;
+            height: 85px;
+            margin-top: 30px;
+            float: left;
+            padding: 20px;
+            border: solid 1px darkcyan;
+        }
+        #footer_logo {
+            float: left;
+            margin: 50px 0 0 30px;
+        }
+        #footer_box {
+            width: 1140px;
+            height: 150px;
+            margin: 0 auto;
+            /* border:solid 1px red; */
+        }
+        #address {
+            float: right;
+            margin: 5-px 30px 0 0;
+            color: white;
+            /* border:solid 1px red; */
+        }
+        #form {
+            text-align: right;
+        }
+
+
+        .clear {
+                clear: both;
+            }
+            section:nth-of-type(1) {
+                height: 1050px;
+                background-color: rgb(222, 248, 197);
+            }
+
+            section:nth-of-type(2) {
+                height: 600px;
+                background-color: rgb(210, 253, 219);
+            }
+
+            footer {
+                height: 100px;
+                padding-left: 300px;
+                background-color: rgb(206, 249, 255);
+            }
+
+            h1 {
+                padding: 40px;
+                font-size: 90px;
+                text-align: center;
+                color: rgb(238, 105, 216);
+                text-shadow: rgb(122, 200, 245);
+            }
+
+            h4 {
+                font-size: 40px;
+                text-align: center;
+                color: rgb(98, 122, 255);
+            }
+
+            p {
+                padding: 20px;
+                font-size: 60px;
+                text-align: center;
+                font-weight: bold;
+                color: rgb(0, 140, 255);
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .image {
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                margin: auto;
+                width: 400px;
+                padding: 40px;
+            }
+
+
+            .container {
+			    display: flex;
+		    	justify-content: center;
+		    	align-items: center;
+		    	height: 65vh;
+		    }
+
+		   .box {
+			    width: 900px;
+			    height: 100px;
+                background-color: rgb(255, 200, 246);
+			    border: 8px solid rgb(165, 215, 255);
+                border-radius: 10px;
+			    padding-top: 30px;
+                padding-bottom: 50px;
+			    text-align: center;
+			    cursor: pointer;
+		   }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="">
+            </div>
+            <nav id="menus">
+                <div id="top_menu">                                 
+                    로그인 ㅣ 회원가입 ㅣ I/D패스워드 찾기
+                </div>
+                <ul id="main_menu">
+                <li>고3/N수생</li>
+                <li>공시생</li>
+                <li>자기개발/원데이클래스</li>
+                <li>씨드머니</li>
+                <li>이벤트</li>
+                <li>고객센터</li>
+                <li>강좌/교재 찾기</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>앗! 배송비 무료 쿠폰이 곧 사라져요!</h1>
+            <p>쉿, 당신에게만 보여주는 무료 쿠폰~!</p>
+            <h4>배송비 무료 쿠폰 글씨를 눌러보세요</h4> <br>
+            <h4>모두가 기다리던 배송비 무료 쿠폰! 전 상품 쿠폰팩으로 득템하세요!</h4> <br>
+            <h4>역대급 쿠폰팩으로 최저가 쇼핑! BEST 상품만 모아모아~~</h4>
+            <div class="container">
+                <img class="image" src="down-chevron.png">
+              </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="box" onclick="changeText()">
+                    <p id="myText">♡배송비 무료 쿠폰♡</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            *본 쿠폰은 회원 당 한번씩 사용하실 수 있습니다. <br>
+            *쿠폰 사용 방법 : 구매 창에서 결제창에 코드를 입력해주세요. <br>
+            *일부 상품 제외 30000원 이상 구매 시 사용하실 수 있습니다. <br>
+            *2023-07-29 23:59 까지
+        </footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // 이미지를 자동으로 변경하는 함수
+            function changeImage() {
+              var image = document.getElementById('myImage');
+              var imageUrl = image.getAttribute('src');
+              
+              // 이미지 경로를 변경할 다른 이미지로 설정
+              if (imageUrl === 'eto1.jpg') {
+                image.src = 'eto2.jpg';
+              } else if (imageUrl === 'eto2.jpg') {
+                image.src = 'eto3.jpg';
+              } else if (imageUrl === 'eto3.jpg') {
+                image.src = 'eto1.jpg';
+              }
+            }
+            
+            // 짧은 주기로 이미지 변경 함수 호출
+            setInterval(changeImage, 500); // 0.5초마다 이미지 변경
+          </script>
+        <meta charset="utf-8">
+        <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style-type: none;
+           
+        }
+        .clear {
+            clear: both;
+        }
+        header {
+            height: 100px;
+            background-color:mediumaquamarine;
+            padding: 30px;
+            margin: 0%;
+            color: white;
+        }
+        
+        #top_menu {
+            text-align: right;
+            margin-top: 20px;
+        }
+        #main_menu {
+            margin-top: 20px;
+            font-family: '맑은고딕';
+            font-size: 20px;
+        }
+        #main_menu li {
+            display: inline;
+            margin-left: 100px;
+            color: white;
+        }
+        #contents {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #sub_menu {
+            width: 700px;
+            float: left;
+            margin-top: 25px;
+        }
+        #sub_menu li {
+            padding: 10px;
+            border-bottom: dotted 1px #ccccccc;
+            border: solid 1px gray;
+        }
+        #main_contents {
+            width: 970px;
+            height: 85px;
+            margin-top: 20px;
+            float: left;
+            padding: 20px;
+            border: solid 1px darkcyan;
+        }
+        footer {
+            height: 150px;
+            margin-top: 600px;
+            background-color:lightseagreen;
+        }
+        #footer_logo {
+            float: left;
+            margin: 50px 0 0 30px;
+        }
+        #footer_box {
+            width: 1140px;
+            height: 150px;
+            margin: 0 auto;
+            /* border:solid 1px red; */
+        }
+        #address {
+            float: right;
+            margin: 5-px 30px 0 0;
+            color: white;
+            /* border:solid 1px red; */
+        }
+        #form {
+            text-align: right;
+        }
+
+
+        body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 300px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .post {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .post h3 {
+      margin-top: 0;
+    }
+
+    .post p {
+      margin-bottom: 0;
+    }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="">
+            </div>
+            <nav id="menus">
+                <div id="top_menu">                                 
+                    로그인 ㅣ 회원가입 ㅣ I/D패스워드 찾기
+                </div>
+                <ul id="main_menu">
+                  <li class="목록"><a href=고3n수생.html>고3/N수생</a></li>
+                  <li class="목록"><a href=공시생.html>공시생</a></li>
+                  <li class="목록"><a href=자기개발.html>자기개발/원데이클래스</a></li>
+                  <li class="목록"><a href=씨드머니.html>씨드머니</a></li>
+                  <li class="목록"><a href=고객센터.html>고객센터</a></li>
+                  <li class="목록"><a href=seedreview.html>리뷰</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="main_img">
+            <img id="myImage" src="eto1.jpg" width="300" height="400">
+            <img id="myImage" src="eto4.png" width="1598" height="400">
+        </section>
+
+        <section id="contents">
+            <nav id="sub_menu">
+                <h2>후기 한눈에 보기</h2> 다음은 실제 수강생이 직접 작성한 후기입니다.
+            </nav>
+            <div id="main_contents">
+                한 강좌 당 하나의 후기를 작성할 수 있습니다.
+                <br>
+                작성을 하면 씨드관리자의 승인이후 씨드머니 10개를 받을 수 있습니다.
+                <br>
+                강좌 내용과 무관한 악플과 욕설, 비방 내용은 승인 미처리 될 수 있습니다.
+                <br>
+                오늘도 에듀씨드에서 즐거운 학습을 할 수 있기를 바랍니다.
+            </div>
+        </section>
+
+        <div class="container">
+        
+            <form>
+              <label for="name">이름:</label>
+              <input type="text" id="name" name="name">
+        
+              <label for="review">후기:</label>
+              <textarea id="review" name="review"></textarea>
+        
+              <input type="submit" value="게시글 작성">
+            </form>
+        
+            <div class="post">
+              <h3>김*윤</h3>
+              <p>강의가 매우 유익하고 질문에 친절히 답변해주셨습니다. 강추합니다!</p>
+            </div>
+        
+            <div class="post">
+              <h3>서*주</h3>
+              <p>강의 내용이 재밌고 실용적입니다. 추천합니다!</p>
+            </div>
+
+            <div class="post">
+                <h3>김*서</h3>
+                <p>재미있는 강의 구성이 너무 마음에 드네요</p>
+              </div>
+
+            <div class="post">
+                <h3>조*연</h3>
+                <p>누구든 수학의 완벽한 개념 정리를 원한다면 현우진 선생님!</p>
+            </div>
+
+            <div class="post">
+                <h3>사*라</h3>
+                <p>최종정리로 필수 커리인 강좌!</p>
+            </div>
+
+            <div class="post">
+                <h3>홍*채</h3>
+                <p>노베이스에게 강추에요</p>
+            </div>
+
+            <div class="post">
+                <h3>허*진</h3>
+                <p>5-6등급에게 추천합니당</p>
+            </div>
+
+            <div class="post">
+                <h3>김*원</h3>
+                <p>졸다가도 이 강의 보면 눈이 번쩍 떠져요!</p>
+            </div>
+
+            <div class="post">
+                <h3>김*수</h3>
+                <p>영어 만년 4등급이 1등급이 된 실제 후기</p>
+            </div>
+
+            <div class="post">
+                <h3>곽*주</h3>
+                <p>이 강의 듣고 공무원 9급 한번에 패스했네요 ㅎㅎ</p>
+            </div>
+
+        
+
+    </body>
+</html>

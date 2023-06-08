@@ -1,0 +1,568 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+	* {
+            padding: 0;
+            margin: 0;
+        }
+
+section {width: 60%; height: 240px; margin-top: 100px; float: right; margin-right: 20%;}
+
+  #logo {
+            float: left;
+            margin: 20px 0 0 20px;
+            /* border:solid 1px red; */
+        }
+		#menus {
+           float: right
+           /* border:solid 1px red; */;
+        }
+        #top_menu {
+            text-align: right;
+            margin-top: 20px;
+            /* border:solid 1px red; */
+        }
+        #main_menu {
+            margin-top: 20px;
+            font-family: '맑은고딕';
+            font-size: 20px;
+        }
+		#main_menu li {
+            display: inline;
+            margin-left: 100px;
+            color: white;
+        }
+		li {
+            list-style-type: none;
+           }
+
+        .clear {
+            clear: both;
+        }
+        header {
+          
+            height: 100px;
+           
+            background-color:mediumaquamarine;
+                padding: 30px;
+                color: white;
+            /* border:solid 1px red; */
+        }
+		h1 {
+            color: white;
+            text-align: center;
+            text-decoration: dashed;
+        }
+		#목록 {
+    
+    width: 20%; 
+    margin-right: 20px; 
+  }
+  #강사 {  
+	float: right;
+  /* 원하는 너비로 조정하세요 */
+    margin-left: 20px; /* 원하는 간격으로 조정하세요 */
+	
+  }
+ 
+</style>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<title>에듀씨드</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="에듀씨드.html"><img src="에듀씨드 로고.jpg"></a>
+		</div>
+		<h1>에듀씨드</h1>
+		
+		<nav id="menus">
+			<div id="top_menu">                                 
+				로그인 ㅣ 회원가입 ㅣ ID/패스워드 찾기
+			</div>
+			<ul id="main_menu">
+				<li></li>
+			<li>고3/N수생</li>
+			<li>공시생</li>
+			<li>자기개발/원데이클래스</li>
+			<li>씨드머니</li>
+			<li>이벤트</li>
+			<li>고객센터</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">					
+<section>
+	<h3>공시생</h3>
+					<form name="frm" id="frm" method="get" >
+						<input type="hidden" name="menuId" value="100000000000068">
+						<input type="hidden" name="menuInit" value="3,1,1,0,0">
+						<input type="hidden" name="searchTab" value="">
+						<input type="hidden" name="searchCategory" value="">
+						<input type="hidden" name="reservYn" />
+						<input type="hidden" name="bbsId" />
+						<input type="hidden" name="bbsMasterId" value="BBSMSTR_000000000001">
+						<input type="hidden" name="pageIndex" value="1">
+
+						<div class="sec_tb_cont">
+							<fieldset class="tb_search">
+								<legend>게시물 검색</legend>
+								
+								<label for="schKey" class="hide" >검색유형</label>
+								<select name="schKey" id="schKey" title="검색 유형 선택">
+									<option value="TITLE" >강의명</option>
+									<option value="NAME" >강사</option>
+									<option value="CONTENT" >과목</option>
+									
+								</select>
+								<label for="schVal" class="hide">검색</label>
+								<input type="text" name="schVal" id="schVal" title="검색어 입력" class="keyword" value="" placeholder="검색어 입력"/>
+								<a href="#search" onclick="javascript:fnSearch();" class="btn">검색</a>
+							</fieldset>
+
+							<div class="tb_blk">
+								<table class="" summary="번호, 제목, 파일, 작성자, 작성일, 조회수 구성되어 있습니다.">
+									<caption>강의 목록</caption>
+									<colgroup>
+										<col width="80px" class="mobileHide"><col/>
+										
+										
+										
+										<col width="90px" class="mobileHide"/>
+										
+										<col width="115px" />
+										
+										
+										<col width="80px" class="mobileHide"/>
+										
+									</colgroup>
+									<thead>
+									<tr>
+										<th class="mobileHide">과목</th>
+										
+										
+										
+										<th>강의명</th>
+										
+										
+										
+										<th class="mobileHide">강사</th>
+										
+										<th>가격</th>
+										
+										
+										<th class="mobileHide">평점(평수)</th>
+										
+									</tr>
+									</thead>
+									<tbody>
+										
+										
+											
+												<tr>
+													<td class="mobileHide">국어</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=6142" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1004753'); return false;">신민숙 쉬운국어 어휘-틀리기쉬운어휘</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+														
+																신민숙	
+																
+															
+														
+													</td>
+													
+													<td>19,000원</td>
+													
+													
+													<td class="mobileHide">4.8점 (93)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">행정학</td>
+													
+													
+													
+													<td class="subj">
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=11681" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1003949'); return false;">서현 현(現) 행정학 쌩기초 입문특강</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+														 서현
+																
+															
+														
+													</td>
+													
+													<td>7,900원</td>
+													
+													
+													<td class="mobileHide">4.7점 (35)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">행정학</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=10870" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033556'); return false;">서현 현(現) 행정학 국가직 대비 실전 동형 모의고사</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															서현
+																
+
+													</td>
+													
+													<td>74,000원</td>
+													
+													
+													<td class="mobileHide">4.7점 (25)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">영어</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=14499" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033528'); return false;">2023 비비안 영어 쌩기초 구문독해</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">				비비안
+																
+															
+														
+													</td>
+													
+													<td>115,000원</td>
+													
+													
+													<td class="mobileHide">4.8점 (43)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">영어</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=11961" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033525'); return false;">비비안 영어 공무원 기출보카 4800</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															비비안
+																
+															
+														
+													</td>
+													
+													<td>114,000원</td>
+													
+													
+													<td class="mobileHide">4.5점 (63)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">한국사</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=11170" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033427'); return false;">이명호 압축 한국사 기본이론</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															이명호 	
+																
+															
+														
+													</td>
+													
+													<td>124,000원</td>
+													
+													
+													<td class="mobileHide">4.8점 (43)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">경제학</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=5067" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033364'); return false;">김종국 국(局) 경제학 입문(거시)</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															김종국
+																
+															
+														
+													</td>
+													
+													<td>84,000원</td>
+													
+													
+													<td class="mobileHide">4.8점 (56)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">사탐</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=10151" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033348'); return false;">김종국 국(局) 경제학 기본이론</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															김종국
+																
+															
+														
+													</td>
+													
+													<td>124,000원</td>
+													
+													
+													<td class="mobileHide">4.6점(40)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">간호보건</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=14662" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033337'); return false;">최성희 공중보건 기본이론</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															최성희
+																
+															
+														
+													</td>
+													
+													<td>84,000원</td>
+													
+													
+													<td class="mobileHide">5.0점(16)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">한문</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://egosi.hackers.com/site/?c=lec_detail&lec_no=3921" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033267'); return false;">신민숙 쉬운국어 2음절한자어</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															신민숙
+																
+															
+														
+													</td>
+													
+													<td>79,000원</td>
+													
+													
+													<td class="mobileHide">4.0점(93)</td>
+													
+												</tr>
+											
+										
+									</tbody>
+								</table>
+							</div>
+							
+
+							<div class="sec_paging">
+								
+
+
+
+
+	
+	<button type="button" class="img" title="이전 페이지로 이동">이전 페이지로</button>
+
+
+
+   		<button type="button" class="on">1</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('2');">2</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('3');">3</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('4');">4</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('5');">5</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('6');">6</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('7');">7</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('8');">8</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('9');">9</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('10');">10</button>
+
+   
+
+
+	<button type="button" class="img" title="다음 페이지로 이동" onclick="goPage('11');">다음 페이지로 이동</button>
+	
+
+<script>
+function goPage(page){
+	var formName = "frm";
+	var formAction = window.location.pathname;
+	document.getElementById(formName).pageIndex.value = page;
+	document.getElementById(formName).action = formAction;
+	document.getElementById(formName).submit();
+}
+</script>
+							</div>
+
+							
+
+							
+
+						
+					</form>
+
+
+					<!-- //Real Contents End-->
+				
+				<!-- 평가-담당자  area -->
+				<div class="sec_evaluation">
+					
+					
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145133324-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145133324-1');
+</script>
+
+<!-- //wrap footer area -->
+</div></section>
+<aside id="목록">
+	<ul><li>
+  <img src="공시생1.png" width="200px" height="350PX">
+	</li>
+	<li>
+		<img src="공시생2.png" width="200px" height="300PX">
+	</li>
+	</ul>
+	</aside>
+
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: '돋움';
+            font-size: 30px;
+            color: #444444;
+        }
+        li {
+            list-style-type: none;
+           
+        }
+        .clear {
+            clear: both;
+        }
+        
+        header {width: 1400px;
+          
+            height: 100px;
+           
+            background-color:mediumaquamarine;
+                padding: 30px;
+                color: white;
+            /* border:solid 1px red; */
+        }
+        aside{float: left; width: 50%;}
+        section{float: left; width: 50%;}
+        h1 {
+            color: white;
+            text-align: center;
+            text-decoration: dashed;
+        }
+        
+        h3 {
+            text-align: center;
+             padding: 10px;
+        }
+        #logo {
+            float: left;
+            margin: 20px 0 0 20px;
+            /* border:solid 1px red; */
+        }
+        #menus {
+           float: right
+           /* border:solid 1px red; */;
+        }
+        #top_menu {
+            text-align: right;
+            margin-top: 20px;
+            /* border:solid 1px red; */
+        }
+        #main_menu {
+            float:left;
+            margin-top: 40px;
+            text-align: center;
+            font-family: '맑은고딕';
+            font-size: 20px;
+            color: black;
+            /* border:solid 1px red; */
+        }
+        #main_menu li {
+            display: inline;
+            margin-left: 80px;
+            text-align: center;
+        }
+        #main_img {
+            width: 100%;
+            height: 281px;
+            background-image: 
+            background-repeat: no-repeat;
+            background-position: top center;
+            margin-top: 20px;
+        }
+        #contents {
+            width: 1140px;
+            margin: 0 auto;
+        }
+        #sub_menu {
+            width: 234px;
+            float: left;
+            margin-top: 25px;
+            /* border:solid 1px red; */
+        }
+        #sub_menu h3 {
+            
+            width: 800px;
+            color: #5df0c0;
+            padding: 12px;
+            background-color: #516e7f;
+        }
+        #sub_menu li {
+            padding: 10px;
+            border-bottom: dotted 1px #ccccccc;
+        }
+        #main_contents {
+            width: 880px;
+            float: right;
+            margin-top: 25px;
+            /* border:solid 1px red; */
+        }
+        #main_contents h3 {
+            font-size: 30px;
+            padding-bottom: 28px;
+           padding-left: 0px;
+        #main_contnts p {
+            margin-top: 50px;
+            line-height: 200%;
+        }
+        #main_contents #figure {
+            margin-top: 30px;
+            text-align: center;
+        }
+        #main_contents li {
+            padding: 5px;
+        }
+        footer {
+            width: 100%;
+            height: 150px;
+            margin-top: 300px;
+            background-color:lightseagreen;
+            position: fixed;
+        }
+        
+        #footer_box {
+            width: 1150px;
+            height: 200px;
+            margin: 0 auto;
+            /* border:solid 1px red; */
+        }
+        #footer_logo {
+            float: left;
+            margin: 50px 0 0 30px;
+        }
+        #address {
+            float: right;
+            margin: -5px 30px 0 0;
+            color: white;
+            /* border:solid 1px red; */
+        }
+        .customer-support {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .customer-support h2 {
+      margin-top: 0;
+    }
+
+    .customer-support p {
+      margin-bottom: 20px;
+    }
+
+    .customer-support button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .customer-support button:hover {
+      background-color: #45a049;}
+      .목록 {background-color: lightgreen;
+text-decoration: none;
+		width: 150px;
+		height: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+margin-right: 10px;}
+    
+        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+        const openButton = document.getElementById('openButton');
+const closeButton = document.getElementById('closeButton');
+const customerService = document.getElementById('customerService');
+
+openButton.addEventListener('click', () => {
+  customerService.classList.remove('hidden');
+});
+
+closeButton.addEventListener('click', () => {
+  customerService.classList.add('hidden');
+});</script>
+    </head>
+    <body>
+        <div class="content">
+        <header>
+            <div id="logo">
+                <a href="에듀씨드.html"><img src="에듀씨드 로고.jpg"></a>
+            </div>
+            <h1>에듀씨드</h1>
+            
+            <nav id="menus">
+                <div id="top_menu">                                 
+                    로그인 ㅣ 회원가입 ㅣ I/D패스워드 찾기
+                </div>
+                <ul id="main_menu">
+                    
+                    <li class="목록"><a href=고3n수생.html>고3/N수생</a></li>
+                    <li class="목록"><a href=공시생.html>공시생</a></li>
+                    <li class="목록"><a href=자기개발.html>자기개발/원데이클래스</a></li>
+                    <li class="목록"><a href=씨드머니.html>씨드머니</a></li>
+                    <li class="목록"><a href=고객센터.html>고객센터</a></li>
+                    <li class="목록"><a href=seedreview.html>리뷰</a></li>
+                </ul>
+            </nav>
+        </header>
+                    
+        </section>
+ 
+        <br><Br><br><BR>
+            <section>
+        <button id="openButton">고객센터 열기</button>
+        <div id="customerService" class="hidden">
+          <h2>고객센터</h2>
+          <p>문의사항이 있으시면 아래 양식을 작성해주세요.</p>
+          <form>
+            <label for="name">이름:</label>
+            <input type="text" id="name" required><br>
+            <label for="email">이메일:</label>
+            <input type="email" id="email" required><br>
+            <label for="message">문의내용:</label>
+            <textarea id="message" required></textarea><br>
+            <button type="submit">보내기</button>
+          </form>
+          <button id="closeButton">닫기</button>
+        </div></section>
+      
+        <script src="script.js"></script>
+        <aside>
+        <h2>고객센터 공지사항</h2><ul>
+            <li>
+        <img src="20230530_175313.png" width="80%"></li>
+        <li><img src="고객사진.png" width="80%"></li>
+        </ul>
+        </aside>
+        </div>
+        
+        <footer>
+            <div id="footer_box">
+                <div id="footer_logo">
+                    <img src="에듀씨드 로고.jpg"><br><BR><BR><BR>
+                <ul id="address">
+                <li>서울특별시 강남구 대치1동 우:123-1234</li>
+				<li>TEL:031-123-1234 Email : eduseed@gmail.com</li>
+				<li>COPYRIGHT (C) 에듀씨드컴퍼니</li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </body>
+</html>

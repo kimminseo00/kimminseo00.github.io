@@ -1,0 +1,568 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+	* {
+            padding: 0;
+            margin: 0;
+        }
+
+section {width: 60%; height: 240px; margin-top: 100px; float: right; margin-right: 20%;}
+
+  #logo {
+            float: left;
+            margin: 20px 0 0 20px;
+            /* border:solid 1px red; */
+        }
+		#menus {
+           float: right
+           /* border:solid 1px red; */;
+        }
+        #top_menu {
+            text-align: right;
+            margin-top: 20px;
+            /* border:solid 1px red; */
+        }
+        #main_menu {
+            margin-top: 20px;
+            font-family: '맑은고딕';
+            font-size: 20px;
+        }
+		#main_menu li {
+            display: inline;
+            margin-left: 100px;
+            color: white;
+        }
+		li {
+            list-style-type: none;
+           }
+
+        .clear {
+            clear: both;
+        }
+        header {
+          
+            height: 100px;
+           
+            background-color:mediumaquamarine;
+                padding: 30px;
+                color: white;
+            /* border:solid 1px red; */
+        }
+		h1 {
+            color: white;
+            text-align: center;
+            text-decoration: dashed;
+        }
+		#목록 {
+    
+    width: 20%; 
+    margin-right: 20px; 
+  }
+  #강사 {  
+	float: right;
+  /* 원하는 너비로 조정하세요 */
+    margin-left: 20px; /* 원하는 간격으로 조정하세요 */
+	
+  }
+ 
+</style>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<title>에듀씨드</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="에듀씨드.html"><img src="에듀씨드 로고.jpg"></a>
+		</div>
+		<h1>에듀씨드</h1>
+		
+		<nav id="menus">
+			<div id="top_menu">                                 
+				로그인 ㅣ 회원가입 ㅣ ID/패스워드 찾기
+			</div>
+			<ul id="main_menu">
+				<li></li>
+			<li>고3/N수생</li>
+			<li>공시생</li>
+			<li>자기개발/원데이클래스</li>
+			<li>씨드머니</li>
+			<li>이벤트</li>
+			<li>고객센터</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">					
+<section>
+	<h3>고3/N수생</h3>
+					<form name="frm" id="frm" method="get" >
+						<input type="hidden" name="menuId" value="100000000000068">
+						<input type="hidden" name="menuInit" value="3,1,1,0,0">
+						<input type="hidden" name="searchTab" value="">
+						<input type="hidden" name="searchCategory" value="">
+						<input type="hidden" name="reservYn" />
+						<input type="hidden" name="bbsId" />
+						<input type="hidden" name="bbsMasterId" value="BBSMSTR_000000000001">
+						<input type="hidden" name="pageIndex" value="1">
+
+						<div class="sec_tb_cont">
+							<fieldset class="tb_search">
+								<legend>게시물 검색</legend>
+								
+								<label for="schKey" class="hide" >검색유형</label>
+								<select name="schKey" id="schKey" title="검색 유형 선택">
+									<option value="TITLE" >강의명</option>
+									<option value="NAME" >강사</option>
+									<option value="CONTENT" >과목</option>
+									
+								</select>
+								<label for="schVal" class="hide">검색</label>
+								<input type="text" name="schVal" id="schVal" title="검색어 입력" class="keyword" value="" placeholder="검색어 입력"/>
+								<a href="#search" onclick="javascript:fnSearch();" class="btn">검색</a>
+							</fieldset>
+
+							<div class="tb_blk">
+								<table class="" summary="번호, 제목, 파일, 작성자, 작성일, 조회수 구성되어 있습니다.">
+									<caption>강의 목록</caption>
+									<colgroup>
+										<col width="80px" class="mobileHide"><col/>
+										
+										
+										
+										<col width="90px" class="mobileHide"/>
+										
+										<col width="115px" />
+										
+										
+										<col width="80px" class="mobileHide"/>
+										
+									</colgroup>
+									<thead>
+									<tr>
+										<th class="mobileHide">과목</th>
+										
+										
+										
+										<th>강의명</th>
+										
+										
+										
+										<th class="mobileHide">강사</th>
+										
+										<th>가격</th>
+										
+										
+										<th class="mobileHide">평점(평수)</th>
+										
+									</tr>
+									</thead>
+									<tbody>
+										
+										
+											
+												<tr>
+													<td class="mobileHide">국어</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="https://mid.milkt.co.kr/lesson/frm_lesson_academic_view.aspx?MenuCode=020000&CLectureCode=S01017000056D001&SubjectCode=S01&TeacherCode=17&CourseCode=" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1004753'); return false;">[수행평가] 발표의 모든 것</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+														
+																엄은나	
+																
+															
+														
+													</td>
+													
+													<td>5,000원</td>
+													
+													
+													<td class="mobileHide">4.8점(5)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">국어</td>
+													
+													
+													
+													<td class="subj">
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=49589&MAKE_FLG=1&tec_cd=megabori" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1003949'); return false;">[수능기초] 2024 강민철의 기본 - 예비고3 -</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															강민철
+																
+															
+														
+													</td>
+													
+													<td>42,000원</td>
+													
+													
+													<td class="mobileHide">4.7점(10)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">수학</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=52171" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033556'); return false;">[고3]이승효의 최신기출문제 : DB3.5 <수l+수ll></a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															이승효
+																
+
+													</td>
+													
+													<td>66,000원</td>
+													
+													
+													<td class="mobileHide">4.9점(23)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">수학</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=52167" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033528'); return false;">[고3]수학의 시작, 시발점 - 확률과 통계</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">				현우진
+																
+															
+														
+													</td>
+													
+													<td>115,000원</td>
+													
+													
+													<td class="mobileHide">4.8(343)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">영어</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=51787" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033525'); return false;">[고3·2·1·N수]V 올인원 베이직</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															김지영
+																
+															
+														
+													</td>
+													
+													<td>42,000원</td>
+													
+													
+													<td class="mobileHide">5.0점(17)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">영어</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=51712" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033427'); return false;">[고3·2·1·N수]수직독해(Vertical Reading)</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															킹콩 	
+																
+															
+														
+													</td>
+													
+													<td>36,000원</td>
+													
+													
+													<td class="mobileHide">5.0점(6)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">한국사</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=51732" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033364'); return false;">[고3·2·1·N수]2024 이다지 한국사 20시간의 기적 - 개념완성</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															이다지
+																
+															
+														
+													</td>
+													
+													<td>90,000원</td>
+													
+													
+													<td class="mobileHide">4.8점(206)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">사탐</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=51608" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033348'); return false;">[고3] 2024 잘 생긴 개념 (생활과 윤리)</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															김종익
+																
+															
+														
+													</td>
+													
+													<td>92,000원</td>
+													
+													
+													<td class="mobileHide">4.5점(40)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">과탐</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=52290" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033337'); return false;">[고3] 2024 AP7 - 고난도 7주제 Training (물리)</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															배기범
+																
+															
+														
+													</td>
+													
+													<td>60,000원</td>
+													
+													
+													<td class="mobileHide">5.0점(16)</td>
+													
+												</tr>
+											
+												<tr>
+													<td class="mobileHide">제2외국어</td>
+													
+													
+													
+													<td class="subj">
+														
+														
+														<a href="http://www.megastudy.net/lecmain/mains/chr_detail/lecture_detailview.asp?CHR_CD=50992" onclick="javascript:fnDetail('N','BBSMSTR_000000000001', '1033267'); return false;">[고3] 일본어 Step 3 파이널 문제풀이</a>
+														
+													</td>
+													
+													
+													
+													<td class="mobileHide">
+															이선옥
+																
+															
+														
+													</td>
+													
+													<td>36,000원</td>
+													
+													
+													<td class="mobileHide">5.0점(1)</td>
+													
+												</tr>
+											
+										
+									</tbody>
+								</table>
+							</div>
+							
+
+							<div class="sec_paging">
+								
+
+
+
+
+	
+	<button type="button" class="img" title="이전 페이지로 이동">이전 페이지로</button>
+
+
+
+   		<button type="button" class="on">1</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('2');">2</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('3');">3</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('4');">4</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('5');">5</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('6');">6</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('7');">7</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('8');">8</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('9');">9</button>
+
+   
+
+   		<button type="button" class="" onclick="goPage('10');">10</button>
+
+   
+
+
+	<button type="button" class="img" title="다음 페이지로 이동" onclick="goPage('11');">다음 페이지로 이동</button>
+	
+
+<script>
+function goPage(page){
+	var formName = "frm";
+	var formAction = window.location.pathname;
+	document.getElementById(formName).pageIndex.value = page;
+	document.getElementById(formName).action = formAction;
+	document.getElementById(formName).submit();
+}
+</script>
+							</div>
+
+							
+
+							
+
+						
+					</form>
+
+
+					<!-- //Real Contents End-->
+				
+				<!-- 평가-담당자  area -->
+				<div class="sec_evaluation">
+					
+					
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145133324-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145133324-1');
+</script>
+
+<!-- //wrap footer area -->
+</div></section>
+<aside id="목록">
+	<ul><li>
+  <img src="내신.png" width="200px">
+	</li>
+	<li>
+		<img src="수능.png" width="200px">
+	</li>
+	</ul>
+	</aside>
+
+</div>
+
+</body>
+</html>
+
+
+
