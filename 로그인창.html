@@ -1,0 +1,65 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>.container {
+		width: 300px;
+		margin: 0 auto;
+		padding: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	  }
+	  
+	  h1 {
+		text-align: center;
+	  }
+	  
+	  input[type="text"], input[type="password"] {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+	  }
+	  
+	  button {
+		width: 100%;
+		padding: 10px;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	  }</style>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>document.getElementById("login-form").addEventListener("submit", function(event) {
+	event.preventDefault(); // Prevent form submission
+  
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+  
+	// Perform login validation
+	if (username === "admin" && password === "password") {
+	  alert("Login successful");
+	  // TODO: Redirect to main page or perform additional actions
+	} else {
+	  alert("Invalid username or password");
+	}
+  });</script>
+</head>
+<body>
+  <div class="container">
+    <h1>Login Page</h1>
+    <form id="login-form" action="에듀씨드.html">
+      <input type="text" placeholder="Username" id="username">
+      <input type="password" placeholder="Password" id="password">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

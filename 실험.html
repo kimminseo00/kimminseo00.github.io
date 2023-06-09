@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }</style>
+  <script>document.getElementById("signup-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+  
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var email = document.getElementById("email").value;
+  
+    // Perform signup validation
+    if (username === "" || password === "" || email === "") {
+      alert("Please fill in all fields");
+    } else {
+      alert("Sign up successful");
+      // TODO: Perform additional actions such as storing user information
+    }
+  });</script>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up Page</h1>
+    <form id="signup-form" action="에듀씨드.html">
+      <input type="text" placeholder="Username" id="username">
+      <input type="password" placeholder="Password" id="password">
+      <input type="email" placeholder="Email" id="email">
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
